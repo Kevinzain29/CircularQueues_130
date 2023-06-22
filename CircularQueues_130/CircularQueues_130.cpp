@@ -90,9 +90,64 @@ public:
 				cout << queues_array[FRONT_position] << " ";
 				FRONT_position++;
 			}
+
+			FRONT_position = 0;
+
+			// iterasi dari awal array hingga REAR
+			while (FRONT_position <= REAR_position) {
+				cout << queues_array[FRONT_position] << " ";
+			}
+			cout << endl;
 		}
 		
 	}
 	
 };
+
+int main() {
+	Queues q;
+	char ch;
+
+	while (true) {
+		try {
+			cout << "Menu" << endl;
+			cout << "1. Implement Insert Operation" << endl;
+			cout << "2. Implement Delete Operation" << endl;
+			cout << "3. Display value" << endl;
+			cout << "4. Exit " << endl;
+			cout << "Enter your choice (1-4): ";
+			char ch;
+			cin >> ch;
+
+			switch(ch) {
+			case'1': {
+				q.Insert();
+				break;
+			}
+			case'2': {
+				q.remove();
+				break;
+			}
+			case'3': {
+				q.display();
+				break;
+			}
+			case'4': {
+				return 0;
+			}
+			default: {
+				cout << "Invalid optiom!!" << endl;
+				break;
+			}
+			}
+
+		}
+		catch (exception& e) {
+			cout << "Check for the values entered." << endl;
+		}
+
+	}
+
+	return 0;
+}
 
