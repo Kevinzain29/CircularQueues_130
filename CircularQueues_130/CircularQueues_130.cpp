@@ -38,7 +38,13 @@ public:
 				REAR = REAR + 1;
 
 		}
-		queue_arr[REAR] = num;
+		queues_array[REAR] = num;
+	}
+
+	void remove() {
+		
+			
+		}
 	}
 };
 
