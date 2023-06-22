@@ -12,6 +12,9 @@ public:
 		REAR = -1;
 	}
 
-	v
+	void Insert() {
+		int num;
+		cout <<  
+	}
 };
 
