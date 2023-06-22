@@ -14,7 +14,11 @@ public:
 
 	void Insert() {
 		int num;
-		cout <<  
+		cout << "Enter a number: ";
+		cin >> num;
+		cout << endl;
+
+
 	}
 };
 
